@@ -135,7 +135,7 @@ window.onload = function() {
         box.style.width = `calc(1.8em + ${width}px)`;
     }
     
-    getAssets('list.json').then(function(r) {
+    getAssets('assets/list.json').then(function(r) {
         base = JSON.parse(r);
         cList = Object.keys(base.list);
         console.log(base);
