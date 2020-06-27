@@ -2,7 +2,7 @@ window.onload = function() {
     var base, cList;
     
     
-    function _endode(str) {
+    function _encode(str) {
         return str.split("").map(function(v){
             if(!v.match(/[a-zA-Z0-9]/)) {
                 return "##cd" + v.charCodeAt() + "##";
