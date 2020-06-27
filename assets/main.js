@@ -138,6 +138,7 @@ window.onload = function() {
     getAssets('list.json').then(function(r) {
         base = JSON.parse(r);
         cList = Object.keys(base.list);
+        console.log(base);
         document.body.addEventListener("click", detectTA);
     })
 }
