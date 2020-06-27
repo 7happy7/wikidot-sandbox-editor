@@ -18,6 +18,7 @@ wikidot-sandbox-editor-master
     └── manifest.json
 ```
 # Commands
+(You can Pull-request if you want more options.)
 | Command  | Display | Description |
 |-----------|-------------|-------------|
 | `!format` | `[[...format]]` | [[>]]<br />[[module Rate]]<br />[[/>]]<br /><br />\**Item #:\*\* SCP-XXXX<br /><br />\*\*Object Class:\*\* Euclid<br /><br />\*\*Special Containment Procedures:\*\* text<br /><br />\*\*Description:\*\*  |
