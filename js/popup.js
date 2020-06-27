@@ -7,9 +7,7 @@ var word = document.querySelector("#word");
 var add = document.querySelector("#new");
 
 
-reload.onclick = function() {
-    _rel();
-}
+
 word.oninput = function() {
     if(word.value.length) {
         add.removeAttribute("disabled");
@@ -36,12 +34,14 @@ add.onclick = function() {
             a = a.parentNode;
         }
         a.setAttribute("class", "del");
+        update.removeAttribute("disabled");
     }
+    update.removeAttribute("disabled");
     add.setAttribute("disabled", "");
     word.value = "";
 }
 
-function _rel() {
+reload.onclick = function() {
     chrome.tabs.query({active:true, currentWindow:true}, function(tabs){
         chrome.tabs.sendMessage(tabs[0].id, {type: 'get'}, function(item){
             list.innerHTML = "";
@@ -66,4 +66,36 @@ function _rel() {
             }
         });
     });
+}
+
+update.onclick = function() {
+    for(var i of document.querySelectorAll("li button, #new")){
+        i.setAttribute("disabled", "");
+    }
+                
+    chrome.tabs.query({active:true, currentWindow:true}, function(tabs){
+        chrome.tabs.sendMessage(tabs[0].id, {type: 'set'}, function(item){
+            list.innerHTML = "";
+            for(var i of item){
+                var li = document.createElement("li");
+                list.appendChild(li);
+                
+                var sp = document.createElement("span");
+                li.appendChild(sp);
+                var bt = document.createElement("button");
+                li.appendChild(bt);
+                
+                sp.innerText = i;
+                bt.innerText = "×";
+                bt.onclick = function(e) {
+                    var a = e.target;
+                    while(a.tagName !== "LI") {
+                        a = a.parentNode;
+                    }
+                    a.setAttribute("class", "del");
+                }
+            }
+        });
+    });
+    update.setAttribute("disabled", "");
 }
