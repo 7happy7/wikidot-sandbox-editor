@@ -5,14 +5,11 @@
     "description": "CHROME EXTENTION FOR RECOMMENDING INPUT CANDIDATE ON YOUR SANDBOX-PAGE",
     "author": "7happy7",
     "permissions": ["tabs", "storage", "unlimitedStorage", "*://*.scp-wiki.net/*", "*://*.wikidot.com/*"],
-    "browser_action": {
-        "default_popup": "html/popup.html"
-    },
-    "web_accessible_resources": ["js/main.js"],
+    "web_accessible_resources": ["assets/main.js"],
     "content_scripts": [
         {
             "matches": ["*://*.scp-wiki.net/*", "*://*.wikidot.com/*"],
-            "js": ["js/main.js"],
+            "js": ["assets/main.js"],
             "run_at": "document_start"
         }
     ]
