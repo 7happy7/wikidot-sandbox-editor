@@ -32,9 +32,13 @@
             "display": "##color##",
             "value": ["###b01|", "##"]
         },
-        "!black": {
+        "!box": {
             "display": "blackbox(█)",
             "value": ["██", ""]
+        },
+        "!bhl": {
+            "display": "[[...bhl]]",
+            "value": ["[[include :scp-wiki:theme:black-highlighter-theme]]", ""]
         }
     }
 }
