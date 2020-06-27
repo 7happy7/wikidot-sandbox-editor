@@ -28,7 +28,7 @@ wikidot-sandbox-editor-master
 | `!size` | `[[size]]` | [[size 120%]]`text`[[/size]] |
 | `!footnote` | `[[footnote]]` | [[footnote]]`text`[[/footnote]] |
 | `!ruby` | `[[...ruby]]` | [[span class="ruby"]]`text`[[span class="rt"]]ruby[[/span]][[/span]] |
-| `!image` | `[[...image]]` | [[include component:image-block<br />\|name=<file name><br />\|caption=`text`<br />]] |
+| `!image` | `[[...image]]` | [[include component:image-block<br />\|name=\<file name\><br />\|caption=`text`<br />]] |
 | `!color` | `##color##` | ###b01`text`## |
 | `!box` | `blackbox(█)` | ██ |
 
