@@ -17,3 +17,8 @@ wikidot-sandbox-editor-master
     ├── README.md
     └── manifest.json
 ```
+# Preview
+----
+![scvdfc](https://user-images.githubusercontent.com/49482246/85929610-5a4f5880-b8f1-11ea-9532-920656164240.png)
+----
+![safgshdjf](https://user-images.githubusercontent.com/49482246/85929632-7f43cb80-b8f1-11ea-8bdf-c57b5dd091d1.png)
