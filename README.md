@@ -28,7 +28,8 @@ wikidot-sandbox-editor-master
 | `!ruby` | [[span class="ruby"]]`text`[[span class="rt"]]ruby[[/span]][[/span]] |
 | `!image` | [[include component:image-block<br />\|name=<file name><br />\|caption=`text`<br />]] |
 | `!color` | ###b01`text`## |
-| `!black` | ██ |
+| `!box` | ██ |
+| `!bhl` | [[include :scp-wiki:theme:black-highlighter-theme]] |
 
 # Preview
 ----
