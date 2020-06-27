@@ -20,6 +20,7 @@ wikidot-sandbox-editor-master
 # Commands
 | Command  | Description |
 |-----------|-------------|
+| `!format` | [[>]]<br />[[module Rate]]<br />[[/>]]<br /><br />\**Item #:\*\* SCP-XXXX<br /><br />\*\*Object Class:\*\* Euclid<br /><br />\*\*Special Containment Procedures:\*\* text<br /><br />\*\*Description:\*\*  |
 | `!collapsible` | [[collapsible show="+ open" hide="- close"]]<br />`text`<br />[[/collapsible]] |
 | `!colmod` | [[include :scp-int:component:coltop show=+open\|hide=-close]]<br />`text`<br />[[include :scp-int:component:colend]] |
 | `!tabview` | [[tabview]]<br />[[tab title]]<br />`text`<br />[[/tab]]<br />[[/tabview]] |
