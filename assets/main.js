@@ -1,5 +1,5 @@
 window.onload = function() {
-    var cList;
+    var base, cList;
     
     function getAssets(filename) {
         return new Promise(function(r) {
@@ -16,19 +16,19 @@ window.onload = function() {
     function detectTA(e) {
         if(e.target.id == "edit-page-textarea") {
             var s = document.createElement("style");
-            s.innerHTML = '.candyBox {background: #fff;box-shadow: 1px 1px 3px #aaa;font-family: courier;font-size: .8em;max-height: 6rem;max-width: 10rem;overflow-y: scroll;position: absolute;text-align: left;width: 99rem;}.candyBox a {cursor: pointer;display: block;padding: .35em .5em;transition: all .175s ease-in-out;}.candyBox a span {display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;white-space: pre;}.candyBox a:hover {background: #b01;color: #fff;}';
+            s.innerHTML = '.candyBox {background: #fff;box-shadow: 1px 1px 3px #aaa;font-family: courier;font-size: .8em;max-height: 6rem;max-width: 12rem;overflow-y: scroll;position: absolute;text-align: left;width: 99rem;}.candyBox a {cursor: pointer;display: block;padding: .35em .5em;transition: all .175s ease-in-out;}.candyBox a span {display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;white-space: pre;}.candyBox a:hover {background: #b01;color: #fff;}';
             document.head.appendChild(s);
             var p = e.target.parentNode;
             p.style.position = "relative";
             e.target.style.outline = "solid 2px #b01";
             
             e.target.oninput = function() {
-                candyBox(e.target, p, cList);
+                candyBox(e.target, p);
             }
             document.body.removeEventListener("click", detectTA);
         }
     }
-    function candyBox(t, p, cList) {
+    function candyBox(t, p) {
         for (var a of document.querySelectorAll(".candyBox")) {
             a.remove();
         }
@@ -54,10 +54,14 @@ window.onload = function() {
         var before = t.value.substring(0, index);
         var after = t.value.substring(index);
 
-        var bef_m = before.match(/([\s\S]*?\n|^)([a-zA-Z\[\"]+?)$/);
+        var bef_m_1 = before.match(/([\s\S]*?[^a-zA-Z])([a-zA-Z]+?)$/);
+        var bef_m_2 = before.match(/([\s\S]*?)(\![a-zA-Z]*?)$/);
+        
+        var bef_m = bef_m_1 || bef_m_2;
+        
         if (!bef_m)
             return;
-        var cand = cList.filter(v=>v.match(new RegExp("^" + bef_m[2].replace(/\[/g, "\\["),"i")));
+        var cand = cList.filter(v=>v.match(new RegExp("^" + bef_m[2],"i")));
         if (!cand.length)
             return;
         var bef = bef_m[1];
@@ -101,14 +105,28 @@ window.onload = function() {
         for (var c of cand) {
             var l = document.createElement("a");
             var s = document.createElement("span");
-            s.innerHTML = c;
+            
+            s.innerHTML = base.list[c].display;
+            s.setAttribute("data-start", base.list[c].value[0]);
+            s.setAttribute("data-end", base.list[c].value[1]);
+            
             l.appendChild(s);
             box.appendChild(l);
             width = width < s.clientWidth ? s.clientWidth : width;
             l.onclick = function(e) {
-                var a = bef + e.target.innerText;
-                t.value = a + aft;
-                t.setSelectionRange(a.length, a.length);
+                var t_s = e.target.getAttribute("data-start");
+                var t_e = e.target.getAttribute("data-end");
+                
+                var a = bef + t_s;
+                var b = (t_e=="" ? "" : "text");
+                var c = t_e + aft;
+                
+                t.value = a + b + c;
+                
+                var index = (t_e=="" ? a.length : (a+b).length);
+                t.setSelectionRange(a.length, index);
+                t.focus();
+                t.blur();
                 t.focus();
                 box.remove();
             }
@@ -118,8 +136,8 @@ window.onload = function() {
     }
     
     getAssets('list.json').then(function(r) {
-        var base = JSON.parse(r);
-        cList = base.list;
+        base = JSON.parse(r);
+        cList = Object.keys(base.list);
         document.body.addEventListener("click", detectTA);
     })
 }
