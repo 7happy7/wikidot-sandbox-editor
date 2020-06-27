@@ -2,15 +2,15 @@
     "list": {
         "!collapsible": {
             "display": "[[collapsible]]",
-            "value": ["[[collapsible show=\\\"+ open\\\" hide=\\\"- close\\\"]]\\n", "\\n[[/collapsible]]"]
+            "value": ["[[collapsible show=\"+ open\" hide=\"- close\"]]\n", "\n[[/collapsible]]"]
         },
         "!colmod": {
             "display": "[[...colmod]]",
-            "value": ["[[include :scp-int:component:coltop show=+open|hide=-close]]\\n", "\\n[[include :scp-int:component:colend]]"]
+            "value": ["[[include :scp-int:component:coltop show=+open|hide=-close]]\n", "\n[[include :scp-int:component:colend]]"]
         },
         "!tabview": {
             "display": "[[tabview]]",
-            "value": ["[[tabview]]\\n[[tab title]]\\n", "\\n[[/tab]]\\n[[/tabview]]"]
+            "value": ["[[tabview]]\n[[tab title]]\n", "\n[[/tab]]\n[[/tabview]]"]
         },
         "!size": {
             "display": "[[size]]",
@@ -22,11 +22,11 @@
         },
         "!ruby": {
             "display": "[[...ruby]]",
-            "value": ["[[span class=\\\"ruby\\\"]]", "[[span class=\\\"rt\\\"]]ruby[[/span]][[/span]]"]
+            "value": ["[[span class=\"ruby\"]]", "[[span class=\"rt\"]]ruby[[/span]][[/span]]"]
         },
         "!image": {
             "display": "[[...image]]",
-            "value": ["[[include component:image-block\\n|name=<file name>\\n|caption=", "\\n]]"]
+            "value": ["[[include component:image-block\n|name=<file name>\n|caption=", "\n]]"]
         },
         "!color": {
             "display": "##color##",
