@@ -18,19 +18,19 @@ wikidot-sandbox-editor-master
     └── manifest.json
 ```
 # Commands
-| Command  | Description |
-|-----------|-------------|
-| `!format` | [[>]]<br />[[module Rate]]<br />[[/>]]<br /><br />\**Item #:\*\* SCP-XXXX<br /><br />\*\*Object Class:\*\* Euclid<br /><br />\*\*Special Containment Procedures:\*\* text<br /><br />\*\*Description:\*\*  |
-| `!collapsible` | [[collapsible show="+ open" hide="- close"]]<br />`text`<br />[[/collapsible]] |
-| `!colmod` | [[include :scp-int:component:coltop show=+open\|hide=-close]]<br />`text`<br />[[include :scp-int:component:colend]] |
-| `!tabview` | [[tabview]]<br />[[tab title]]<br />`text`<br />[[/tab]]<br />[[/tabview]] |
-| `!size` | [[size 120%]]`text`[[/size]] |
-| `!footnote` | [[footnote]]`text`[[/footnote]] |
-| `!ruby` | [[span class="ruby"]]`text`[[span class="rt"]]ruby[[/span]][[/span]] |
-| `!image` | [[include component:image-block<br />\|name=<file name><br />\|caption=`text`<br />]] |
-| `!color` | ###b01`text`## |
-| `!box` | ██ |
-| `!bhl` | [[include :scp-wiki:theme:black-highlighter-theme]] |
+| Command  | Display | Description |
+|-----------|-------------|-------------|
+| `!format` | `[[...format]]` | [[>]]<br />[[module Rate]]<br />[[/>]]<br /><br />\**Item #:\*\* SCP-XXXX<br /><br />\*\*Object Class:\*\* Euclid<br /><br />\*\*Special Containment Procedures:\*\* text<br /><br />\*\*Description:\*\*  |
+| `!bhl` | `[[...bhl]]` | [[include :scp-wiki:theme:black-highlighter-theme]] |
+| `!collapsible` | `[[collapsible]]` | [[collapsible show="+ open" hide="- close"]]<br />`text`<br />[[/collapsible]] |
+| `!colmod` | `[[...colmod]]` | [[include :scp-int:component:coltop show=+open\|hide=-close]]<br />`text`<br />[[include :scp-int:component:colend]] |
+| `!tabview` | `[[tabview]]` | [[tabview]]<br />[[tab title]]<br />`text`<br />[[/tab]]<br />[[/tabview]] |
+| `!size` | `[[size]]` | [[size 120%]]`text`[[/size]] |
+| `!footnote` | `[[footnote]]` | [[footnote]]`text`[[/footnote]] |
+| `!ruby` | `[[...ruby]]` | [[span class="ruby"]]`text`[[span class="rt"]]ruby[[/span]][[/span]] |
+| `!image` | `[[...image]]` | [[include component:image-block<br />\|name=<file name><br />\|caption=`text`<br />]] |
+| `!color` | `##color##` | ###b01`text`## |
+| `!box` | `blackbox(█)` | ██ |
 
 # Preview
 ----
