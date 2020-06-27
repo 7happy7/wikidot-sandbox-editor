@@ -2,7 +2,7 @@
     "name": "Wikidot - Sandbox Editor",
     "version": "1.0.0",
     "manifest_version": 2,
-    "description": "CHROME EXTENTION FOR RECOMMENDING INPUT CANDIDATE ON YOUR SANDBOX-PAGE",
+    "description": "CHROME EXTENSION FOR DISPLAYING INPUT CANDIDATES ON YOUR SANDBOX-PAGE.",
     "author": "7happy7",
     "permissions": ["tabs", "storage", "unlimitedStorage", "*://*.scp-wiki.net/*", "*://*.wikidot.com/*"],
     "web_accessible_resources": ["assets/main.js", "assets/*.json"],
