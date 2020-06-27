@@ -68,10 +68,7 @@ window.onload = function() {
         var before = t.value.substring(0, index);
         var after = t.value.substring(index);
 
-        var bef_m_1 = before.match(/([\s\S]*?[^a-zA-Z])([a-zA-Z]+?)$/);
-        var bef_m_2 = before.match(/([\s\S]*?)(\![a-zA-Z]*?)$/);
-        
-        var bef_m = bef_m_1 || bef_m_2;
+        var bef_m = before.match(/([\s\S]*?)(\![a-zA-Z]*?)$/);
         
         if (!bef_m)
             return;
