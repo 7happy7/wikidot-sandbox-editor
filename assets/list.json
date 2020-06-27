@@ -1,5 +1,5 @@
 {
-    list: {
+    'list': {
         '!collapsible': {
             display: '[[collapsible]]',
             value: ['[[collapsible show="+ open" hide="- close"]]\n', '\n[[/collapsible]]']
@@ -35,6 +35,6 @@
         '!black': {
             display: 'blackbox(█)',
             value: ['██', '']
-        },
+        }
     }
 }
