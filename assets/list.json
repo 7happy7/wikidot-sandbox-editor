@@ -6,7 +6,7 @@
         },
         "!colmod": {
             "display": "[[...colmod]]",
-            "value": ["[[include :scp-int:component:coltop show=+open|hide=-close]]", "[[include :scp-int:component:colend]]"]
+            "value": ["[[include :scp-int:component:coltop show=+open|hide=-close]]\\n", "\\n[[include :scp-int:component:colend]]"]
         },
         "!tabview": {
             "display": "[[tabview]]",
