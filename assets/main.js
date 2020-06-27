@@ -1,6 +1,20 @@
 window.onload = function() {
     var base, cList;
     
+    
+    function _endode(str) {
+        return str.split("").map(function(v){
+            if(!v.match(/[a-zA-Z0-9]/)) {
+                return "##cd" + v.charCodeAt() + "##";
+            }
+            return v;
+        }).join("");
+    }
+    function _decode(str) {
+        return str.replace(/##cd(\d+?)##/g, function(a,b) {
+            return String.fromCharCode(b);
+        });
+    }
     function getAssets(filename) {
         return new Promise(function(r) {
             var xhr = new XMLHttpRequest();
@@ -107,15 +121,15 @@ window.onload = function() {
             var s = document.createElement("span");
             
             s.innerHTML = base.list[c].display;
-            s.setAttribute("data-start", base.list[c].value[0]);
-            s.setAttribute("data-end", base.list[c].value[1]);
+            s.setAttribute("data-start", _encode(base.list[c].value[0]));
+            s.setAttribute("data-end", _encode(base.list[c].value[1]));
             
             l.appendChild(s);
             box.appendChild(l);
             width = width < s.clientWidth ? s.clientWidth : width;
             l.onclick = function(e) {
-                var t_s = e.target.getAttribute("data-start");
-                var t_e = e.target.getAttribute("data-end");
+                var t_s = _decode(e.target.getAttribute("data-start"));
+                var t_e = _decode(e.target.getAttribute("data-end"));
                 
                 var a = bef + t_s;
                 var b = (t_e=="" ? "" : "text");
