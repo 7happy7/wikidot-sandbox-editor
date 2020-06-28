@@ -1,3 +1,7 @@
+> ### Languages
+> -EN, [-JP](https://github.com/7happy7/wikidot-sandbox-editor-ja)
+
+----
 # Wikidot - Sandbox Editor (beta version)
 Chrome Extension for displaying input candidates on your sandbox-page by using commands.
 
