@@ -2,7 +2,7 @@ window.onload = function() {
     var base, cList;
     
     
-    function _encode(str) {
+    function _encode(str="") {
         return str.split("").map(function(v){
             if(!v.match(/[a-zA-Z0-9]/)) {
                 return "##cd" + v.charCodeAt() + "##";
@@ -10,7 +10,7 @@ window.onload = function() {
             return v;
         }).join("");
     }
-    function _decode(str) {
+    function _decode(str="") {
         return str.replace(/##cd(\d+?)##/g, function(a,b) {
             return String.fromCharCode(b);
         });
