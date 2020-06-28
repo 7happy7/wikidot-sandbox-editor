@@ -1,5 +1,5 @@
 # Wikidot - Sandbox Editor (beta version)
-Chrome Extension for displaying input candidates on your sandbox-page.
+Chrome Extension for displaying input candidates on your sandbox-page by using commands.
 
 # Install
 1. Download a zip file and unzip it to the local.
