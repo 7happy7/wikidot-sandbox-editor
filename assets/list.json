@@ -55,6 +55,10 @@
         "!listUsers": {
             "display": "[[...listUsers]]",
             "value": ["[[include :topia:listusers-1 users=\".\"]]\n##red|%%name%%##\ntext for wikidot user\n[[include :topia:listusers-2]]\n##blue|guest##\ntext for non-wikidot user\n[[include :topia:listusers-3]]", ""]
+        },
+        "!footer": {
+            "display": "[[...footer-wikiwalk-nav]]",
+            "value": ["[[div class=\"footer-wikiwalk-nav\"]]\n= << [[[SCP-XXXX]]] | SCP-XXXX | [[[SCP-XXXX]]] >>", "\n[[/div]]"]
         }
     }
 }
