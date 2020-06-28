@@ -40,6 +40,10 @@
             "display": "blackbox(█)",
             "value": ["██", ""]
         },
+        "!css": {
+            "display": "[[...CSS]]",
+            "value": ["[[module CSS]]\n", "\n[[/module]]"]
+        },
         "!note": {
             "display": "[[note]]",
             "value": ["[[note]]\n", "\n[[/note]]"]
