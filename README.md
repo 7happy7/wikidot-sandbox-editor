@@ -39,6 +39,7 @@ wikidot-sandbox-editor-master
 | `!tabview` | `[[tabview]]` | [[tabview]]<br />[[tab title]]<br />`text`<br />[[/tab]]<br />[[/tabview]] |
 | `!iframe` | `[[iframe]]` | [[iframe `text` style=\"border: none; width: 100%;\"]] |
 | `!listUsers` | `[[...listUsers]]` | [[include :topia:listusers-1 users="."]]<br />##red\|%%name%%##<br />text for wikidot user<br />[[include :topia:listusers-2]]<br />##blue\|guest##<br />text for non-wikidot user<br />[[include :topia:listusers-3]] |
+| `!footer` | `[[...footer-wikiwalk-nav]]` | [[div class="footer-wikiwalk-nav"]]<br />= << [[[SCP-XXXX]]] \| SCP-XXXX \| [[[SCP-XXXX]]] >><br />[[/div]] |
 
 # Preview
 ----
