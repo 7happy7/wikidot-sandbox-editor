@@ -16,10 +16,6 @@
             "display": "[[...colmod]]",
             "value": ["[[include :scp-int:component:coltop show=+open|hide=-close]]\n", "\n[[include :scp-int:component:colend]]"]
         },
-        "!tabview": {
-            "display": "[[tabview]]",
-            "value": ["[[tabview]]\n[[tab title]]\n", "\n[[/tab]]\n[[/tabview]]"]
-        },
         "!size": {
             "display": "[[size]]",
             "value": ["[[size 120%]]", "[[/size]]"]
@@ -43,6 +39,22 @@
         "!box": {
             "display": "blackbox(█)",
             "value": ["██", ""]
+        },
+        "!note": {
+            "display": "[[note]]",
+            "value": ["[[note]]\n", "\n[[/note]]"]
+        },
+        "!tabview": {
+            "display": "[[tabview]]",
+            "value": ["[[tabview]]\n[[tab title]]\n", "\n[[/tab]]\n[[/tabview]]"]
+        },
+        "!iframe": {
+            "display": "[[iframe]]",
+            "value": ["[[iframe ", " style=\"border: none; width: 100%;\"]]"]
+        },
+        "!listUsers": {
+            "display": "[[...listUsers]]",
+            "value": ["[[include :topia:listusers-1 users=\".\"]]\n##red|%%name%%##\ntext for wikidot user\n[[include :topia:listusers-2]]\n##blue|guest##\ntext for non-wikidot user\n[[include :topia:listusers-3]]", ""]
         }
     }
 }
