@@ -35,6 +35,7 @@ wikidot-sandbox-editor-master
 | `!image` | `[[...image]]` | [[include component:image-block<br />\|name=\<file name\><br />\|caption=`text`<br />]] |
 | `!color` | `##color##` | ###b01\|`text`## |
 | `!box` | `blackbox(█)` | ██ |
+| `!css` | `[[...CSS]]` | [[module CSS]]<br />`text`<br />[[/module]] |
 | `!note` | `[[note]]` | [[note]]<br />`text`<br />[[/note]] |
 | `!tabview` | `[[tabview]]` | [[tabview]]<br />[[tab title]]<br />`text`<br />[[/tab]]<br />[[/tabview]] |
 | `!iframe` | `[[iframe]]` | [[iframe `text` style=\"border: none; width: 100%;\"]] |
