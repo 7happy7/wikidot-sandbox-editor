@@ -1,5 +1,5 @@
 > ### Languages
-> -EN, [-JP](https://github.com/7happy7/wikidot-sandbox-editor-ja)
+> -EN, [-JP](https://github.com/7happy7/wikidot-sandbox-editor/tree/jp), [-ZH-TW](https://github.com/7happy7/wikidot-sandbox-editor/tree/zh-tw)
 
 ----
 # Wikidot - Sandbox Editor (beta version)
