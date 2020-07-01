@@ -2,7 +2,7 @@
     "list": {
         "!format": {
             "display": "[[...format]]",
-            "value": ["[[>]]\n[[module Rate]]\n[[/>]]\n\n**Item #:** SCP-XXXX\n\n**Object Class:** Euclid\n\n**Special Containment Procedures:** text\n\n**Description:** ", ""]
+            "value": ["[[>]]\n[[module Rate]]\n[[/>]]\n\n**項目編號：** SCP-ZH-XXXX\n\n**項目等級：** Euclid\n\n**特殊收容措施：** text\n\n**描述：** ", ""]
         },
         "!bhl": {
             "display": "[[...bhl]]",

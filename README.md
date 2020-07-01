@@ -1,31 +1,31 @@
-> ### Languages
-> [-EN](https://github.com/7happy7/wikidot-sandbox-editor), [-JP](https://github.com/7happy7/wikidot-sandbox-editor/tree/jp), -ZH-TW
+> ### 語言
+> [-EN](https://github.com/7happy7/wikidot-sandbox-editor), [-JP](https://github.com/7happy7/wikidot-sandbox-editor-ja), -ZH-TW
 
 ----
-# Wikidot - Sandbox Editor (beta version)
-Chrome Extension for displaying input candidates on your sandbox-page by using commands.
+# Wikidot - 沙盒編輯器 （測試版）
+利用指令來呈現輸入預測的Chrome擴充功能。
 
-# Install
-1. Download a zip file and unzip it to the local.
-2. Go to Chrome Extension.
+# 安裝
+1. 下載本專案並解壓縮。
+2. 前往Chrome的擴充功能頁面。
 > * `chrome://extensions/`
-> * ![safgshdjf (2)](https://user-images.githubusercontent.com/49482246/84563612-c54c4b80-ad97-11ea-9559-584dcc268f4f.png) `(config)` > `More tools` > `Extensions`
-3. Enable `Developer mode` (click a toggle at the upper right of the page).
-4. Click `LOAD UNPACKED` and select the following file.
+> * ![safgshdjf (2)](https://user-images.githubusercontent.com/49482246/84563612-c54c4b80-ad97-11ea-9559-584dcc268f4f.png) `（自訂及管理Google Chrome）` > `更多工具` > `擴充功能`
+3. 啟用 `開發人員模式` (勾選右上角的切換鈕)。
+4. 點擊 `載入未封裝項目` 並選擇解壓縮後的檔案。
 ```
 wikidot-sandbox-editor-master
-└── wikidot-sandbox-editor-master <-this one!
+└── wikidot-sandbox-editor-master <-這一個！
     ├── assets
     │   ├── list.json
     │   └── main.js
     ├── README.md
     └── manifest.json
 ```
-# Commands
-(You can add "Issues" or do "Pull-request" if you want more options.)
-| Command  | Display | Description |
+# 指令
+（如果你想要更多功能，你可以新增「issue」或是新增一個「Pull-request」。）
+| 指令  | 預覽 | 說明 |
 |-----------|-------------|-------------|
-| `!format` | `[[...format]]` | [[>]]<br />[[module Rate]]<br />[[/>]]<br /><br />\**Item #:\*\* SCP-XXXX<br /><br />\*\*Object Class:\*\* Euclid<br /><br />\*\*Special Containment Procedures:\*\* text<br /><br />\*\*Description:\*\*  |
+| `!format` | `[[...format]]` | [[>]]<br />[[module Rate]]<br />[[/>]]<br /><br />\**項目編號：\*\* SCP-ZH-XXXX<br /><br />\*\*項目等級：\*\* Euclid<br /><br />\*\*特殊收容措施：\*\* text<br /><br />\*\*描述：\*\*  |
 | `!bhl` | `[[...bhl]]` | [[include :scp-wiki:theme:black-highlighter-theme]] |
 | `!collapsible` | `[[collapsible]]` | [[collapsible show="+ open" hide="- close"]]<br />`text`<br />[[/collapsible]] |
 | `!colmod` | `[[...colmod]]` | [[include :scp-int:component:coltop show=+open\|hide=-close]]<br />`text`<br />[[include :scp-int:component:colend]] |
@@ -42,8 +42,8 @@ wikidot-sandbox-editor-master
 | `!listUsers` | `[[...listUsers]]` | [[include :topia:listusers-1 users="."]]<br />##red\|%%name%%##<br />text for wikidot user<br />[[include :topia:listusers-2]]<br />##blue\|guest##<br />text for non-wikidot user<br />[[include :topia:listusers-3]] |
 | `!footer` | `[[...footer-wikiwalk-nav]]` | [[div class="footer-wikiwalk-nav"]]<br />= << [[[SCP-XXXX]]] \| SCP-XXXX \| [[[SCP-XXXX]]] >><br />[[/div]] |
 
-# Preview
+# 預覽
 ----
-![scvdfc](https://user-images.githubusercontent.com/49482246/85929610-5a4f5880-b8f1-11ea-9532-920656164240.png)
+![scvdfc](https://user-images.githubusercontent.com/43753315/86227118-2dd06080-bbbf-11ea-96bb-eb1a725f3e96.png)
 ----
-![safgshdjf](https://user-images.githubusercontent.com/49482246/85929632-7f43cb80-b8f1-11ea-8bdf-c57b5dd091d1.png)
+![safgshdjf](https://user-images.githubusercontent.com/43753315/86227245-53f60080-bbbf-11ea-87aa-66ee8abee1f6.png)
