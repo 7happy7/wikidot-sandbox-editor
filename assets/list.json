@@ -1,0 +1,68 @@
+{
+    "list": {
+        "!format": {
+            "display": "[[...format]]",
+            "value": ["[[>]]\n[[module Rate]]\n[[/>]]\n\n**項目編號：** SCP-ZH-XXXX\n\n**項目等級：** Euclid\n\n**特殊收容措施：** text\n\n**描述：** ", ""]
+        },
+        "!bhl": {
+            "display": "[[...bhl]]",
+            "value": ["[[include :scp-wiki:theme:black-highlighter-theme]]", ""]
+        },
+        "!collapsible": {
+            "display": "[[collapsible]]",
+            "value": ["[[collapsible show=\"+ open\" hide=\"- close\"]]\n", "\n[[/collapsible]]"]
+        },
+        "!colmod": {
+            "display": "[[...colmod]]",
+            "value": ["[[include :scp-int:component:coltop show=+open|hide=-close]]\n", "\n[[include :scp-int:component:colend]]"]
+        },
+        "!size": {
+            "display": "[[size]]",
+            "value": ["[[size 120%]]", "[[/size]]"]
+        },
+        "!footnote": {
+            "display": "[[footnote]]",
+            "value": ["[[footnote]]", "[[/footnote]]"]
+        },
+        "!ruby": {
+            "display": "[[...ruby]]",
+            "value": ["[[span class=\"ruby\"]]", "[[span class=\"rt\"]]ruby[[/span]][[/span]]"]
+        },
+        "!image": {
+            "display": "[[...image]]",
+            "value": ["[[include component:image-block\n|name=<file name>\n|caption=", "\n]]"]
+        },
+        "!color": {
+            "display": "##color##",
+            "value": ["###b01|", "##"]
+        },
+        "!box": {
+            "display": "blackbox(█)",
+            "value": ["██", ""]
+        },
+        "!css": {
+            "display": "[[...CSS]]",
+            "value": ["[[module CSS]]\n", "\n[[/module]]"]
+        },
+        "!note": {
+            "display": "[[note]]",
+            "value": ["[[note]]\n", "\n[[/note]]"]
+        },
+        "!tabview": {
+            "display": "[[tabview]]",
+            "value": ["[[tabview]]\n[[tab title]]\n", "\n[[/tab]]\n[[/tabview]]"]
+        },
+        "!iframe": {
+            "display": "[[iframe]]",
+            "value": ["[[iframe ", " style=\"border: none; width: 100%;\"]]"]
+        },
+        "!listUsers": {
+            "display": "[[...listUsers]]",
+            "value": ["[[include :topia:listusers-1 users=\".\"]]\n##red|%%name%%##\ntext for wikidot user\n[[include :topia:listusers-2]]\n##blue|guest##\ntext for non-wikidot user\n[[include :topia:listusers-3]]", ""]
+        },
+        "!footer": {
+            "display": "[[...footer-wikiwalk-nav]]",
+            "value": ["[[div class=\"footer-wikiwalk-nav\"]]\n= << [[[SCP-XXXX]]] | SCP-XXXX | [[[SCP-XXXX]]] >>\n[[/div]]", ""]
+        }
+    }
+}

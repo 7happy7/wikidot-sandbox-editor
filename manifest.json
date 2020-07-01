@@ -1,0 +1,16 @@
+{
+    "name": "Wikidot - 沙盒編輯器",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "利用指令來呈現輸入預測的Chrome擴充功能。",
+    "author": "7happy7, Translated by ChAoS_UnItY",
+    "permissions": ["storage", "*://*.scp-wiki.net/*", "*://*.wikidot.com/*"],
+    "web_accessible_resources": ["assets/main.js", "assets/*.json"],
+    "content_scripts": [
+        {
+            "matches": ["*://*.scp-wiki.net/*", "*://*.wikidot.com/*"],
+            "js": ["assets/main.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
