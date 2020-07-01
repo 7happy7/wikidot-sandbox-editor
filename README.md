@@ -1,5 +1,5 @@
 > ### 語言
-> [-EN](https://github.com/7happy7/wikidot-sandbox-editor), [-JP](https://github.com/7happy7/wikidot-sandbox-editor-ja), -ZH-TW
+> [-EN](https://github.com/7happy7/wikidot-sandbox-editor), [-JP](https://github.com/7happy7/wikidot-sandbox-editor/tree/jp), -ZH-TW
 
 ----
 # Wikidot - 沙盒編輯器 （測試版）
