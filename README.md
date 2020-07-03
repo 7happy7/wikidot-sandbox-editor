@@ -1,5 +1,5 @@
 > ### Languages
-> -EN<br />[-JP](https://github.com/7happy7/wikidot-sandbox-editor/tree/jp)<br />[-ZH-TW](https://github.com/7happy7/wikidot-sandbox-editor/tree/zh-tw) by [KyleLin921021](https://github.com/KyleLin921021)\(a.k.a. [ChAoS_UnItY](http://www.wikidot.com/user:info/chaos-unity)\)
+> **-EN** <br />[**-JP**](https://github.com/7happy7/wikidot-sandbox-editor/tree/jp) <br />[**-ZH-TW**](https://github.com/7happy7/wikidot-sandbox-editor/tree/zh-tw) by [KyleLin921021](https://github.com/KyleLin921021)\(a.k.a. [ChAoS_UnItY](http://www.wikidot.com/user:info/chaos-unity)\)
 > 
 > (Need more languages? Please call me via [Wikidot PM](http://www.wikidot.com/account/messages#/new/3427263) or anything else to create a new branch, and do "Pull-request".)
 ----
