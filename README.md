@@ -1,6 +1,7 @@
 > ### Languages
 > -EN<br />[-JP](https://github.com/7happy7/wikidot-sandbox-editor/tree/jp)<br />[-ZH-TW](https://github.com/7happy7/wikidot-sandbox-editor/tree/zh-tw) \(by [KyleLin921021](https://github.com/KyleLin921021)\)
-
+> ----
+> (Need more languages? Please call me via Wikidot PM or anything else to create a new branch, and do "Pull-request".)
 ----
 # Wikidot - Sandbox Editor (beta version)
 Chrome Extension for displaying input candidates on your sandbox-page by using commands.
