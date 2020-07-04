@@ -1,8 +1,8 @@
 {
-    "name": "Wikidot - Sandbox Editor",
+    "name": "Wikidot - 沙盒編輯器",
     "version": "0.0.1",
     "manifest_version": 2,
-    "description": "CHROME EXTENSION FOR DISPLAYING INPUT CANDIDATES ON YOUR SANDBOX-PAGE.",
+    "description": "在沙盒中使用指令快速插入代碼的Chrome擴充功能。",
     "author": "7happy7",
     "permissions": ["storage", "*://*.scp-wiki.net/*", "*://*.wikidot.com/*"],
     "web_accessible_resources": ["assets/main.js", "assets/*.json"],
