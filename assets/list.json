@@ -8,6 +8,10 @@
             "display": "[[...bhl]]",
             "value": ["[[include :scp-wiki-cn:theme:black-highlighter-theme]]", ""]
         },
+        "!collapsible": {
+            "display": "[[collapsible]]",
+            "value": ["[[collapsible show=\"+ 打开\" hide=\"- 关闭\"]]\n", "\n[[/collapsible]]"]
+        },
         "!colmod": {
             "display": "[[...colmod]]",
             "value": ["[[include :scp-wiki-cn:component:coltop show=+打开|hide=-关闭]]\n", "\n[[include :scp-wiki-cn:component:colend]]"]
