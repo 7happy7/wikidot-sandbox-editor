@@ -1,20 +1,16 @@
 {
     "list": {
         "!format": {
-            "display": "[[...format]]",
-            "value": ["[[>]]\n[[module Rate]]\n[[/>]]\n\n**Item #:** SCP-XXXX\n\n**Object Class:** Euclid\n\n**Special Containment Procedures:** text\n\n**Description:** ", ""]
+            "display": "[[...项目格式]]",
+            "value": ["[[>]]\n[[module Rate]]\n[[/>]]\n\n**项目编号：**SCP-CN-XXXX\n\n**项目等级：**Euclid\n\n**特殊收容措施：**文字\n\n**描述：**", ""]
         },
         "!bhl": {
             "display": "[[...bhl]]",
-            "value": ["[[include :scp-wiki:theme:black-highlighter-theme]]", ""]
-        },
-        "!collapsible": {
-            "display": "[[collapsible]]",
-            "value": ["[[collapsible show=\"+ open\" hide=\"- close\"]]\n", "\n[[/collapsible]]"]
+            "value": ["[[include :scp-wiki-cn:theme:black-highlighter-theme]]", ""]
         },
         "!colmod": {
             "display": "[[...colmod]]",
-            "value": ["[[include :scp-int:component:coltop show=+open|hide=-close]]\n", "\n[[include :scp-int:component:colend]]"]
+            "value": ["[[include :scp-wiki-cn:component:coltop show=+打开|hide=-关闭]]\n", "\n[[include :scp-wiki-cn:component:colend]]"]
         },
         "!size": {
             "display": "[[size]]",
@@ -30,14 +26,14 @@
         },
         "!image": {
             "display": "[[...image]]",
-            "value": ["[[include component:image-block\n|name=<file name>\n|caption=", "\n]]"]
+            "value": ["[[include component:image-block\n|name=<档案名称>\n|caption=", "\n]]"]
         },
         "!color": {
-            "display": "##color##",
+            "display": "##颜色##",
             "value": ["###b01|", "##"]
         },
         "!box": {
-            "display": "blackbox(█)",
+            "display": "黑条(█)",
             "value": ["██", ""]
         },
         "!css": {
@@ -50,7 +46,7 @@
         },
         "!tabview": {
             "display": "[[tabview]]",
-            "value": ["[[tabview]]\n[[tab title]]\n", "\n[[/tab]]\n[[/tabview]]"]
+            "value": ["[[tabview]]\n[[tab 标题]]\n", "\n[[/tab]]\n[[/tabview]]"]
         },
         "!iframe": {
             "display": "[[iframe]]",
@@ -58,11 +54,11 @@
         },
         "!listUsers": {
             "display": "[[...listUsers]]",
-            "value": ["[[include :topia:listusers-1 users=\".\"]]\n##red|%%name%%##\ntext for wikidot user\n[[include :topia:listusers-2]]\n##blue|guest##\ntext for non-wikidot user\n[[include :topia:listusers-3]]", ""]
+            "value": ["[[include :topia:listusers-1 users=\".\"]]\n##red|%%name%%##\n已登入用户可以看到此部分文字\n[[include :topia:listusers-2]]\n##blue|访客##\n未登入用户可以看到此部分文字\n[[include :topia:listusers-3]]", ""]
         },
         "!footer": {
             "display": "[[...footer-wikiwalk-nav]]",
-            "value": ["[[div class=\"footer-wikiwalk-nav\"]]\n= << [[[SCP-XXXX]]] | SCP-XXXX | [[[SCP-XXXX]]] >>\n[[/div]]", ""]
+            "value": ["[[div class=\"footer-wikiwalk-nav\"]]\n= << [[[SCP-CN-XXXX]]] | SCP-CN-XXXX | [[[SCP-CN-XXXX]]] >>\n[[/div]]", ""]
         }
     }
 }
