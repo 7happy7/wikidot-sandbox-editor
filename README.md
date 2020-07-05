@@ -14,8 +14,8 @@
 3. `개발자 모드`를 활성화해주세요 (페이지 오른쪽 위 토글을 클릭해주세요).
 4. `압축해제된 확장 프로그램을 로드합니다.`를 선택하시고 아래 파일을 선택하세요.
 ```
-wikidot-sandbox-editor-master
-└── wikidot-sandbox-editor-master <-이 폴더를 선택하세요!
+wikidot-sandbox-editor-ko
+└── wikidot-sandbox-editor-ko <-이 폴더를 선택하세요!
     ├── assets
     │   ├── list.json
     │   └── main.js
