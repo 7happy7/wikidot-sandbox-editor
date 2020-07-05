@@ -88,7 +88,7 @@ window.onload = function() {
         for (var k in t_style) {
             div.style[k] = t_style[k];
         }
-        var scale = t_style.transform.split(/[^d.]/).filter(function(v) {
+        var scale = t_style.transform.split(/[^\d.]/).filter(function(v) {
             return v
         });
         var scale_x = scale[0];
