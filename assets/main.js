@@ -129,7 +129,7 @@ window.onload = function() {
                 var t_e = _decode(e.target.getAttribute("data-end"));
                 
                 var a = bef + t_s;
-                var b = (t_e=="" ? "" : "text");
+                var b = (t_e=="" ? "" : "텍스트");
                 var c = t_e + aft;
                 
                 t.value = a + b + c;
