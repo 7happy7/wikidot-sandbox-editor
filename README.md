@@ -1,5 +1,5 @@
 > ### 他言語版
-> [-EN](https://github.com/7happy7/wikidot-sandbox-editor), -JP, [-ZH-TW](https://github.com/7happy7/wikidot-sandbox-editor/tree/zh-tw)
+> [**-EN**](https://github.com/7happy7/wikidot-sandbox-editor) <br />**-JP** <br />[**-ZH-TW**](https://github.com/7happy7/wikidot-sandbox-editor/tree/zh-tr)  by [KyleLin921021](https://github.com/KyleLin921021)\(a.k.a. [ChAoS_UnItY](http://www.wikidot.com/user:info/chaos-unity)\) <br />[**-CN（简体）**](https://github.com/7happy7/wikidot-sandbox-editor/tree/cn-hans) by [Joch2520](https://github.com/Joch2520)\(a.k.a. [Jochoi](http://www.wikidot.com/user:info/jochoi)\) <br />[**-CN（繁體）**](https://github.com/7happy7/wikidot-sandbox-editor/tree/cn-hant) by [Joch2520](https://github.com/Joch2520)\(a.k.a. [Jochoi](http://www.wikidot.com/user:info/jochoi)\) <br />[**-KO**](https://github.com/7happy7/wikidot-sandbox-editor/tree/ko) by [Dr Devan](http://www.wikidot.com/user:info/Dr-Devan) 
 
 ----
 # Wikidot - サンドボックスエディター (ベータ版)
