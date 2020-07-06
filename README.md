@@ -13,8 +13,8 @@
 3. `デベロッパー モード`を有効化(ページ右上のトグルをクリック)。
 4. `パッケージ化されていない拡張機能を読み込む`をクリックし、以下のファイルを選択。
 ```
-wikidot-sandbox-editor-ja-master
-└── wikidot-sandbox-editor-ja-master <-これ！
+wikidot-sandbox-editor-jp
+└── wikidot-sandbox-editor-jp <-これ！
     ├── assets
     │   ├── list.json
     │   └── main.js
