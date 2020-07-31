@@ -3,7 +3,7 @@
 > 
 > (다른 언어가 더 필요하신가요? [Wikidot PM](http://www.wikidot.com/account/messages#/new/3427263) 혹은 새 언어판을 생성하시고 "Pull-request" 해주세요.)
 ----
-# Wikidot - 샌드박스 에디터 (베타 버전)
+# Wikidot - 샌드박스 에디터 (ver 1.0.0)
 명령어를 사용하여 샌드박스 페이지에 입력 제안을 표시하기 위한 크롬 확장 프로그램.
 
 # 설치
