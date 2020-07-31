@@ -1,6 +1,5 @@
 window.onload = function() {
-    var base, cList;
-    
+    var base, cList, cBox, cDiv;
     
     function _encode(str="") {
         return str.split("").map(function(v){
@@ -10,8 +9,8 @@ window.onload = function() {
             return v;
         }).join("");
     }
-    function _decode(str="") {
-        return str.replace(/##cd(\d+?)##/g, function(a,b) {
+    function _decode(str) {
+        return (str||"").replace(/##cd(\d+?)##/g, function(a,b) {
             return String.fromCharCode(b);
         });
     }
@@ -30,19 +29,75 @@ window.onload = function() {
     function detectTA(e) {
         if(e.target.id == "edit-page-textarea") {
             var s = document.createElement("style");
-            s.innerHTML = '.candyBox {background: #fff;box-shadow: 1px 1px 3px #aaa;font-family: courier;font-size: .8em;max-height: 6rem;max-width: 12rem;overflow-y: scroll;position: absolute;text-align: left;width: 99rem;}.candyBox a {cursor: pointer;display: block;padding: .35em .5em;transition: all .175s ease-in-out;}.candyBox a span {display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;white-space: pre;}.candyBox a:hover {background: #b01;color: #fff;}';
+            s.innerHTML = '.candyBox {background: #fff;box-shadow: 1px 1px 3px #aaa;font-family: courier;font-size: .8em;max-height: 6rem;max-width: 12rem;overflow-y: scroll;position: absolute;text-align: left;width: 99rem;}.candyBox a {cursor: pointer;display: block;padding: .35em .5em;transition: all .175s ease-in-out;}.candyBox a span {display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;white-space: pre;}.candyBox a.selected, .candyBox a:hover {background: #b01;color: #fff;}';
             document.head.appendChild(s);
             var p = e.target.parentNode;
             p.style.position = "relative";
             e.target.style.outline = "solid 2px #b01";
+            var _e = e;
             
-            e.target.oninput = function() {
-                candyBox(e.target, p);
+            e.target.onkeyup = function(e) {
+                var key = e.code;
+                if((key!=="Enter"&&key!=="ArrowUp"&&key!=="ArrowDown")||!cBox) {
+                    candyBox(_e.target, p);
+                }
+            }
+            e.target.onkeydown = function(e) {
+                var box = cBox;
+                var key = e.code;
+                if(box) {
+                    var a = box.querySelector("a");
+                    var s = box.querySelector("a.selected");
+                    if((key=="Enter"&&s)||(key=="ArrowUp"&&a)||(key=="ArrowDown"&&a)) {
+
+
+                        e.preventDefault();
+                        e.stopPropagation();
+                        if(s) {
+                            switch(key) {
+                                case "Enter":
+                                    s.onclick({"target": s});
+                                    break;
+                                case "ArrowUp":
+                                    if(s.previousElementSibling && s.previousElementSibling.tagName=="A") {
+                                        s.classList.remove("selected");
+                                        s.previousElementSibling.classList.add("selected");
+                                        box.scrollTop -= s.previousElementSibling.offsetHeight;
+                                    }
+                                    break;
+                                case "ArrowDown":
+                                    if(s.nextElementSibling && s.nextElementSibling.tagName=="A") {
+                                        s.classList.remove("selected");
+                                        s.nextElementSibling.classList.add("selected");
+                                        box.scrollTop += s.nextElementSibling.offsetHeight;
+                                    }
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }else {
+                            switch(key) {
+                                case "ArrowUp":
+                                    a.classList.remove("selected");
+                                    break;
+                                case "ArrowDown":
+                                    if(a.nextElementSibling && a.nextElementSibling.tagName=="A") {
+                                        a.nextElementSibling.classList.add("selected");
+                                    }
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
+                        return false;
+                    }
+                }
             }
             document.body.removeEventListener("click", detectTA);
         }
     }
     function candyBox(t, p) {
+        cBox = null;
         for (var a of document.querySelectorAll(".candyBox")) {
             a.remove();
         }
@@ -85,16 +140,20 @@ window.onload = function() {
         box.classList.add("candyBox");
 
         var t_style = window.getComputedStyle(t);
+
         for (var k in t_style) {
             div.style[k] = t_style[k];
         }
+        div.style.whiteSpace = 'pre-wrap';
+        div.style.wordWrap = 'break-word'; 
+
         var scale = t_style.transform.split(/[^\d.]/).filter(function(v) {
             return v
         });
         var scale_x = scale[0];
         var scale_y = scale[3];
 
-        div.innerHTML = before;
+        div.innerText = before;
         var span = document.createElement('span');
         span.innerHTML = '&nbsp;';
         div.scrollTop = div.scrollHeight;
@@ -125,8 +184,9 @@ window.onload = function() {
             box.appendChild(l);
             width = width < s.clientWidth ? s.clientWidth : width;
             l.onclick = function(e) {
-                var t_s = _decode(e.target.getAttribute("data-start"));
-                var t_e = _decode(e.target.getAttribute("data-end"));
+                var elm = e.target.tagName=="A" ? e.target.children[0] : e.target;
+                var t_s = _decode(elm.getAttribute("data-start"));
+                var t_e = _decode(elm.getAttribute("data-end"));
                 
                 var a = bef + t_s;
                 var b = (t_e=="" ? "" : "text");
@@ -144,6 +204,8 @@ window.onload = function() {
         }
 
         box.style.width = `calc(1.8em + ${width}px)`;
+        cBox = box;
+        cDiv = div;
     }
     
     getAssets('assets/list.json').then(function(r) {
