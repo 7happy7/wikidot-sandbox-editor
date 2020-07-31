@@ -38,7 +38,7 @@ window.onload = function() {
             
             e.target.onkeyup = function(e) {
                 var key = e.code;
-                if((key!=="Enter"&&key!=="ArrowUp"&&key!=="ArrowDown")||!cBox) {
+                if( !((key=="Enter"&&sel)||(key=="ArrowUp"&&cBox)||(key=="ArrowDown"&&cBox)) ) {
                     candyBox(_e.target, p);
                 }
             }
