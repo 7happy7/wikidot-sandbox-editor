@@ -3,7 +3,7 @@
 >
 > （需要更多语言？ 请在 [Wikidot 私信](http://www.wikidot.com/account/messages#/new/3427263) 或其它地方通知我去建立一个新的 branch，然后请求 Pull-request。）
 ----
-# Wikidot - 沙盒编辑器（beta测试版）
+# Wikidot - 沙盒编辑器（ver 1.0.0）
 在沙盒中使用指令快速插入代码的 Chrome 扩展程序。
 
 # 安装
