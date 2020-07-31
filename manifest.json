@@ -1,6 +1,6 @@
 {
     "name": "Wikidot - Sandbox Editor",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "manifest_version": 2,
     "description": "CHROME EXTENSION FOR DISPLAYING INPUT CANDIDATES ON YOUR SANDBOX-PAGE.",
     "author": "7happy7",
