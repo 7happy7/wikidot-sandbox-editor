@@ -56,7 +56,7 @@ window.onload = function() {
                         if(s) {
                             switch(key) {
                                 case "Enter":
-                                    s.click();
+                                    s.onclick({"target": s});
                                     break;
                                 case "ArrowUp":
                                     if(s.previousElementSibling && s.previousElementSibling.tagName=="A") {
@@ -184,8 +184,9 @@ window.onload = function() {
             box.appendChild(l);
             width = width < s.clientWidth ? s.clientWidth : width;
             l.onclick = function(e) {
-                var t_s = _decode(e.target.getAttribute("data-start"));
-                var t_e = _decode(e.target.getAttribute("data-end"));
+                var elm = e.target.tagName=="A" ? e.target.children[0] : e.target;
+                var t_s = _decode(elm.getAttribute("data-start"));
+                var t_e = _decode(elm.getAttribute("data-end"));
                 
                 var a = bef + t_s;
                 var b = (t_e=="" ? "" : "text");
