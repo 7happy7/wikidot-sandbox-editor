@@ -50,6 +50,8 @@ window.onload = function() {
                     var a = box.querySelector("a");
                     var s = box.querySelector("a.selected");
                     if((key=="Enter"&&s)||(key=="ArrowUp"&&a)||(key=="ArrowDown"&&a)) {
+
+
                         e.preventDefault();
                         e.stopPropagation();
                         if(s) {
@@ -77,11 +79,13 @@ window.onload = function() {
                         }else {
                             switch(key) {
                                 case "ArrowUp":
-                                    a.classList.remove("selected");
+                                    a.classList.add("selected");
                                     break;
                                 case "ArrowDown":
                                     if(a.nextElementSibling && a.nextElementSibling.tagName=="A") {
                                         a.nextElementSibling.classList.add("selected");
+                                    }else {
+                                        a.classList.add("selected");
                                     }
                                     break;
                                 default:
