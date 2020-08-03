@@ -79,11 +79,13 @@ window.onload = function() {
                         }else {
                             switch(key) {
                                 case "ArrowUp":
-                                    a.classList.remove("selected");
+                                    a.classList.add("selected");
                                     break;
                                 case "ArrowDown":
                                     if(a.nextElementSibling && a.nextElementSibling.tagName=="A") {
                                         a.nextElementSibling.classList.add("selected");
+                                    }else {
+                                        a.classList.add("selected");
                                     }
                                     break;
                                 default:
