@@ -50,8 +50,6 @@ window.onload = function() {
                     var a = box.querySelector("a");
                     var s = box.querySelector("a.selected");
                     if((key=="Enter"&&s)||(key=="ArrowUp"&&a)||(key=="ArrowDown"&&a)) {
-
-
                         e.preventDefault();
                         e.stopPropagation();
                         if(s) {
