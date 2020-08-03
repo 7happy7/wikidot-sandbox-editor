@@ -3,7 +3,7 @@
 >
 > （需要更多語言？ 請在[Wikidot 私信](http://www.wikidot.com/account/messages#/new/3427263) 或其它地方通知我去建立一個新的branch，然後請求Pull-request 。）
 ----
-# Wikidot - 沙盒編輯器（ver 1.0.0）
+# Wikidot - 沙盒編輯器（ver 1.0.1）
 在沙盒中使用指令快速插入代碼的 Chrome 擴充功能。
 
 # 安裝
