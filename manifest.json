@@ -1,6 +1,6 @@
 {
     "name": "Wikidot - 샌드박스 에디터",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "manifest_version": 2,
     "description": "샌드박스 페이지에 입력 추천을 보여주는 크롬 확장기능.",
     "author": "7happy7",
