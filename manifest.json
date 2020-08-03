@@ -1,6 +1,6 @@
 {
     "name": "Wikidot - Sandbox Editor",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "manifest_version": 2,
     "description": "サンドボックスページにて入力候補を表示するChrome拡張です。",
     "author": "7happy7",
