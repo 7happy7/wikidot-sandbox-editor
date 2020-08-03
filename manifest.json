@@ -1,6 +1,6 @@
 {
     "name": "Wikidot - 沙盒编辑器",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "manifest_version": 2,
     "description": "沙盒中使用指令快速插入代码的CHROME扩展程序。",
     "author": "7happy7",
