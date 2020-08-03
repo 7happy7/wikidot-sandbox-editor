@@ -3,7 +3,7 @@
 > 
 > (Need more languages? Please call me via [Wikidot PM](http://www.wikidot.com/account/messages#/new/3427263) or anything else to create a new branch, and do "Pull-request".)
 ----
-# Wikidot - Sandbox Editor (ver 1.0.0)
+# Wikidot - Sandbox Editor (ver 1.0.1)
 Chrome Extension for displaying input candidates on your sandbox-page by using commands.
 
 # Install
