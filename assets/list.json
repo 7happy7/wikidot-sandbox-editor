@@ -63,6 +63,10 @@
         "!footer": {
             "display": "[[...footer-wikiwalk-nav]]",
             "value": ["[[div class=\"footer-wikiwalk-nav\"]]\n= << [[[SCP-XXXX]]] | SCP-XXXX | [[[SCP-XXXX]]] >>\n[[/div]]", ""]
+        },
+        "!user": {
+            "display": "[[*user...]]",
+            "value": "[[*user <username>]]"
         }
     }
 }
